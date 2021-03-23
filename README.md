@@ -52,7 +52,7 @@ Play an RPG game where you start off as a level 1 Chef and navigate through the 
 ---
 ## Database Schema
 The database for this application has the following tables and relationships:
-<div><img src="public/img/rpg_schema.png" alt="Application Schema Visualization" width = 400 ></div>
+<div><img src="app/assets/images/rpg_schema.png" alt="Application Schema Visualization" width = 400 ></div>
 
 ---
 
