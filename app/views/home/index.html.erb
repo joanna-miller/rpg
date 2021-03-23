@@ -1,1 +1,20 @@
-<h1>This is the home page</h1>
+<h1>Kitchen Killerz</h1>
+
+<% if current_user %>
+  <p> You are a beautiful, baby <%= current_user.role %>.</p>
+  <p> Level: <%= current_user.level %> </p>
+
+<h3>Your Items:</h3>
+  <% if current_user.items.any? %>
+    <% current_user.items.each do |item| %>
+      <h4><%= item.item %> </h4>
+      <p>Type: <%= item.type %> </p>
+      <p>Stat: <%= item.stat %> </p>
+    <% end %>
+  <% else %>
+    <p>You currently do not have any items</p>
+  <% end %>
+
+<% else %>
+  <p>Sign in or Sign up to play this game!</p>
+<% end %>
