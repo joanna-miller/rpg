@@ -13,9 +13,9 @@
   <body>
     <div class="container">
       <% if current_user %>
-        You are signed in as: <%= current_user.username %> | <%=  link_to "Home", '/' %> | <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+        You are signed in as: <%= current_user.username %> | <%=  link_to "Home", '/' %> | <%= link_to "Sign out", destroy_user_session_path %>
       <% else %>
-        <%=  link_to "Home", '/' %> | <%= link_to "Sign up", '/users/sign_up' %> | <%= link_to "Sign in", '/users/sign_in' %>
+        <%=  link_to "Home", '/' %> | <%= link_to "Sign up", new_user_registration_path %> | <%= link_to "Sign in", new_user_session_path %>
       <% end %>
 
       <%= flash[:alert] %>
