@@ -1,14 +1,14 @@
-# _{README Template}_
+# _Kitchen Killerz_
 
-### By _**Jo Miller**_
+### By _**Jo Miller & Mekinsie Callahan**_
 
 #### _This project was created solely for the education of the author(s) and is not in a complete or portfolio-ready state. It should not be considered representative of professional work._
 
 
-[Epicodus](https://www.epicodus.com/) - [Ruby and Rails](https://www.learnhowtoprogram.com/ruby-and-rails/) <!-- - [Week 4](https://www.learnhowtoprogram.com/ruby-and-rails/ruby-database-basics/database-basics-independent-project) -->
+[Epicodus](https://www.epicodus.com/) - [Ruby and Rails](https://www.learnhowtoprogram.com/ruby-and-rails/) - [Week 4](https://www.learnhowtoprogram.com/ruby-and-rails/authentication-and-authorization/flickr-clone-rpg-two-day-project)
 
 
-#### Date created: {03/00/2021}
+#### Date created: 03/23/2021
 ---
 
 ## Technologies Used
@@ -29,16 +29,30 @@
 * _Faker 2.17.00_
 * _Bootstrap-Sass 3.4.1_
 * _git 2.30.0_
+* _Devise_
 
 ---
 
 ## Description
 
-{Description of application}
+Play an RPG game where you start off as a level 1 Chef and navigate through the kitchen world. Here, you can battle enemies and collect items as you progress through the game.
 
-## Database Schema 
+---
+
+## User Stories
+
+* As a user, I want to be able to create, edit, and delete my account.
+* As a user, I want to be able to add, edit and delete my profile picture.
+* As a user, I want to have an inventory of items that I can view, add, edit and delete.a
+* As a user, I want to visit locations to interact with items and enemies.
+* As a user, I want to fight enemies to level up.
+* As an admin, I want to be able to create, edit and delete locations.
+* As an admin, I want to be able to create, edit, and delete items.
+* As an admin, I want to be able to create, edit and delete enemies.
+---
+## Database Schema
 The database for this application has the following tables and relationships:
-<div><img src="public/img/{image_name}.png" alt="Application Schema Visualization" width = 350 ></div>
+<div><img src="public/img/rpg_schema.png" alt="Application Schema Visualization" width = 350 ></div>
 
 ---
 
@@ -52,8 +66,8 @@ The database for this application has the following tables and relationships:
 
 ## Setup/Installation
 
-* To clone this directory, navigate in your terminal to the desired location of the project and run command `git clone https://github.com/joanna-miller/{repository_name}.git`
-* Navigate to top level of the directory with command `cd {repository_name}`
+* To clone this directory, navigate in your terminal to the desired location of the project and run command `git clone https://github.com/joanna-miller/rpg.git`
+* Navigate to top level of the directory with command `cd rpg`
 * To install bundler for managing gems run command `gem install bundler`
 * To install gems into the project run command `bundle install`
 * Launch PostgreSQL to run a persistent database management server with command `postgres`
@@ -75,7 +89,7 @@ The database for this application has the following tables and relationships:
 
 ## Known Bugs
 
-* {list any known bugs here}
+* No known bugs
 
 ---
 
@@ -88,3 +102,4 @@ The database for this application has the following tables and relationships:
 ## Contact Information
 
 * _Contact Jo via [Email](mailto:joannadawnmiller@gmail.com) or [LinkedIn](https://www.linkedin.com/in/jomillerde/), or check out her [Github](https://github.com/joanna-miller)._
+* _Contact Mekinsie via [Email](mailto:mekinsie.aja@gmail.com) or [LinkedIn](https://www.linkedin.com/in/mekinsie/), or check out her [Github](https://github.com/mekinsie)._
