@@ -4,6 +4,9 @@
   <p> You are a beautiful, baby <%= current_user.role %>.</p>
   <p> Level: <%= current_user.level %> </p>
 
+
+  <%= link_to "Start Your Adventure!", '/locations/1' %>
+
 <h3>Your Items:</h3>
   <% if current_user.items.any? %>
     <% current_user.items.each do |item| %>
@@ -18,3 +21,5 @@
 <% else %>
   <p>Sign in or Sign up to play this game!</p>
 <% end %>
+
+<p>See a list of all in-game <%= link_to 'items', '/items' %>

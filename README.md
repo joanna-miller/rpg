@@ -43,7 +43,7 @@ Play an RPG game where you start off as a level 1 Chef and navigate through the 
 
 * As a user, I want to be able to create, edit, and delete my account.
 * As a user, I want to be able to add, edit and delete my profile picture.
-* As a user, I want to have an inventory of items that I can view, add, edit and delete.a
+* As a user, I want to have an inventory of items that I can view, add, edit and delete.
 * As a user, I want to visit locations to interact with items and enemies.
 * As a user, I want to fight enemies to level up.
 * As an admin, I want to be able to create, edit and delete locations.

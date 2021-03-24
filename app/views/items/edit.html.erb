@@ -1,0 +1,7 @@
+<h1>Edit Item</h1>
+
+<%= render "layouts/item_form" %>
+
+<p><%= link_to "Delete Item", item_path(@item), :data => { :confirm => "Are you sure?", :method => "delete" } %></p>
+
+<p><%= link_to "Back to #{@item.item}", item_path(@item) %></p>

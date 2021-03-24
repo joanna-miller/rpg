@@ -1,0 +1,18 @@
+<h1>Location: <%= @location.name %></h1>
+
+  <p>Oh no! You have been shrunken to the size of a mouse. You are now 1 inch tall and need to prepare an omelet for a customer. However, you must do so in a normal-sized kitchen. You may navigate through the kitchen by selecting from available choices.</p>
+  <p> To defeat a monster, your level must be higher or equal to the monster's level.</p>
+  <h3>Current situation:</h3>
+  <p>You've arrived at the <%= @location.name %> but it is <%= @location.obstacle %>.</p>
+    <h4>Your level: <%= current_user.level %></h4>
+  <% @location.monsters.each do |monster|%>
+    <p>Monster to confront: <%= monster.name %></p>
+    <p>Monster level: <%= monster.level %>
+
+  <h4>Your options:</h4>
+    <p> Cross counter, confront soapy. </p>
+    <p><%= link_to "Swim across sink, avoid soapy.", '/locations/2' %></p>
+    <p><%= link_to "Give up (Quit)", root_path %></p>
+
+  <% end %>
+
