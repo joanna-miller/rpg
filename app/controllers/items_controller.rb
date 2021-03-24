@@ -1,6 +1,6 @@
 class ItemsController < ApplicationController
 
-  before_action :only => [:edit] do
+  before_action :only => [:edit, :new, :create, :update] do
     unless current_user && current_user.admin
       flash[:notice] = "You are not authorized to visit that page"
       redirect_to item_path
@@ -45,6 +45,12 @@ class ItemsController < ApplicationController
       flash[:notice] = "There was an issue updating the item"
       redirect_to edit_item_path
     end
+  end
+
+  def destroy
+    item = Item.find(params[:id])
+    item.destroy
+    redirect_to items_path
   end
 
   private

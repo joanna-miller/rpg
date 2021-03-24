@@ -3,6 +3,7 @@
 <% if current_user %>
   <p> You are a beautiful, baby <%= current_user.role %>.</p>
   <p> Level: <%= current_user.level %> </p>
+  <p>Hello Cook! Oh no! You have been shrunken to the size of a mouse. You are now 1 inch tall and need to prepare an omelet for a customer. However, you must do so in a normal-sized kitchen. You may navigate through the kitchen by selecting from available choices.</p>
 
 <h3>Your Items:</h3>
   <% if current_user.items.any? %>
