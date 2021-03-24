@@ -20,8 +20,17 @@ class LocationsController < ApplicationController
   end
   
   def show
-    render :show
+    @location = Location.find(params[:id])
+    if @location.id == 2
+      fork = Item.where(item: "Fork")
+      fork << current_user
+    end
+    render :"show#{@location.id}"
   end
+
+
+
+  def
 
   def edit
 
